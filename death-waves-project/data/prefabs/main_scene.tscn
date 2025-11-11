@@ -32,6 +32,3 @@ shape = SubResource("BoxShape3D_ksmi5")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 material_override = SubResource("StandardMaterial3D_ksmi5")
 mesh = SubResource("BoxMesh_klrjt")
-
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5651488, 3.3041403)
