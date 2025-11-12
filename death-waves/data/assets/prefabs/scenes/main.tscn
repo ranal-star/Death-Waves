@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1jsftt0coxh3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_mv6yn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bt4m1"]
+
+[sub_resource type="Environment" id="Environment_mv6yn"]
+background_mode = 1
+
+[node name="Main" type="Node"]
+
+[node name="Floor" type="Node3D" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor/StaticBody3D"]
+mesh = SubResource("BoxMesh_mv6yn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D"]
+shape = SubResource("BoxShape3D_bt4m1")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_mv6yn")
